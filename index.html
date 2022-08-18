@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Exercise</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    
+</head>
+<body>
+    <div class="Main">
+        <div class="headerMain">
+            <h1>Machine Learning - TensorFlow.js</h1>
+        </div>
+        <div class="contentMain">
+            <div class="Menu">
+                <div class="card">
+                    <div class="cardTitle">Problem</div>
+                    <div class="cardContent">
+                        <p>Create a machine learning application that can recognize random images..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="card">
+                    <div class="cardTitle">Description</div>
+                    <div class="cardContent">
+                        <p>For the generation of random images we will use an external source such as "picsum".
+                            and for image recognition we are going to use "mobilenet".</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardTitle">Image</div>
+                    <div class="cardContentImg">
+                        <img id="img" crossorigin src="https://picsum.photos/200/300?random=3243"/>
+                        <button id="cambiaImagen" onclick="cambiarImagen();">change image</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardTitle">Predition</div>
+                    <div class="cardContent">
+                        <table id="tablePrediction">
+                            <tr>
+                              <th>ClassName</th>
+                              <th>Probability</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Tensorflow -->
+<script src="main.js"></script>
+
+</body>
+</html>

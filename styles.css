@@ -1,0 +1,158 @@
+* {
+    margin:  0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+body{
+    background-image: url("bg.jpg");
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    padding-bottom: 15px;
+}
+
+.Main{
+    width: 80%;
+}
+
+.headerMain{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    border-bottom-width: 2px;
+    border-bottom-style:dashed;
+    border-bottom-color: white;
+}
+
+.contentMain{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Menu{
+    width: 30%;
+    position: relative;
+}
+
+.side{
+    width: 68%;
+}
+
+.card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.cardTitle{
+    font-weight: 800;
+    font-size: 1.5rem;
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+    border-bottom-color: blue;
+}
+
+.cardContent{
+    padding-top: 30px;
+    font-weight: 400;
+}
+
+.cardContentImg{
+    padding-top: 30px;
+    font-weight: 400;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardContentImg img{
+    padding-bottom: 30px;
+    width: 200px;
+    height: 300px;
+}
+
+text {
+    pointer-events: none;
+  }
+  
+.node:hover {
+stroke: #999;
+stroke-opacity: .6;
+stroke-width: 4px;
+}
+
+.link {
+    stroke: #999;
+    stroke-opacity: .6;
+}
+
+
+#tablePrediction {
+font-family: Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+#tablePrediction td, #tablePrediction th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+#tablePrediction tr:nth-child(even){background-color: #f2f2f2;}
+
+#tablePrediction tr:hover {background-color: #ddd;}
+
+#tablePrediction th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #04AA6D;
+color: white;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 20%;
+    border-radius: 10px;
+}
+
+
+@media all and (max-width: 600px){
+    .contentMain{
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .Menu{
+        width: 100%;
+    }
+    
+    .side{
+        width: 100%;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    .cardContentImg img{
+        padding-bottom: 10px;
+        width: 150px;
+        height: 200px;
+    }
+}
